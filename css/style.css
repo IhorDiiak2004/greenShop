@@ -9,16 +9,17 @@
 .container_one{
   width: 1200px;
   margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 header{
   padding-top: 30px;
 }
 
-
+header .container_one{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 
 
