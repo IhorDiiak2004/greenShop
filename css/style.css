@@ -1,3 +1,45 @@
+/* Index */
+
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.container_one{
+  width: 1200px;
+  margin: auto;
+}
+
+header{
+  padding-top: 30px;
+}
+
+header .container_one{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Registration */
+
 .container{
   max-width: 500px; 
   border: solid 1px silver; 
