@@ -14,6 +14,7 @@
 
 /* Index */
 
+/* First section*/
 *{
   padding: 0px;
   margin: 0px;
@@ -127,6 +128,67 @@ font-family: 'cera_proregular';
   border-radius: 6px;
   font-family: 'cera_proregular';
 }
+
+
+
+
+/*Second section*/
+
+.content_page .container_categories {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.left_side{
+  background: #fbfbfb;
+}
+
+.left_side .categories_list{
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  list-style: none;
+  margin-bottom: 377px;
+}
+
+.categories_h3{
+font-family: 'cera_proregular';
+font-weight: 700;
+margin-bottom: 7px;
+font-size: 18px;
+line-height: 89%;
+color: #3d3d3d;
+}
+
+.left_side .words_list{
+font-family: 'cera_proregular';
+text-decoration: none;
+font-weight: 400;
+color: #3d3d3d;
+font-size: 15px;
+line-height: 267%;
+}
+
+.right_side_nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+.product_grid{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 33px 70px;
+}
+
+
+
+
+
+
+
 
 
 
