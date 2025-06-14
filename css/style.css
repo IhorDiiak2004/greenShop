@@ -25,19 +25,17 @@
   margin-bottom: 46px;
 }
 
+header{
+  padding-top: 30px;
+  margin-bottom: 12px;
+}
+
 .container_header{
   max-width: 1200px;
   margin: auto;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding-bottom: 17px;
   border-bottom: 0.30px solid rgba(70, 163, 88, 0.5);
-  margin-bottom: 12px;
-}
-
-header{
-  padding-top: 30px;
 }
 
 .container_header .list{
@@ -46,12 +44,92 @@ header{
   list-style: none;
 }
 
+header nav ul li ul{
+  gap: 0;
+}
+
+header nav ul li.dropdown{
+  position: relative;
+}
+
+header nav ul li.dropdown:hover .submenu{
+  height: 230px;
+}
+
+header nav ul li ul.submenu li{
+  background-color: #edf6ee;
+  padding: 7px 14px;
+}
+
+header nav ul li ul.submenu li:hover{
+ background-color: #1a712a;
+}
+
+header nav ul li ul.submenu li:hover a{
+ color:white;
+ font-weight: 700;
+ font-family: 'cera_proregular';
+}
+
+header nav ul li ul.submenu{
+  min-width: 188px;
+  position: absolute;
+  top: 67px;
+  left: -55px;
+  overflow: hidden;
+  height: 0;
+  transition: 0.4s;
+}
+
+header nav ul li ul.submenu li a {
+  text-decoration: none;
+  font-family: 'cera_proregular';
+  font-weight: 400;
+  font-size: 16px;
+  color: #3d3d3d;
+  line-height: 30px;
+}
+
+header nav ul li ul.submenu li a.submenu-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 10px;
+}
+
+header nav ul li ul.submenu li a.submenu-item:hover svg path{
+  fill: white;
+}
+
+header nav ul li:after{
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background-color: #46A358;
+  margin-top: 22px;
+  transition: 0.4s;
+}
+
+header nav ul li ul li:after{
+  display: none;
+}
+
+header nav ul li:hover::after{
+  width: 100%;
+}
+
+.container_header .words:hover{
+  font-weight: 700; 
+}
+
 .container_header .words{
   font-family: 'cera_proregular';
   text-decoration: none;
   font-weight: 400;
   font-size: 16px;
   color: #3d3d3d;
+  line-height: 30px;
 }
 
 .login{
@@ -69,6 +147,7 @@ header{
   padding: 8px 17px 7px; 
   border: none;
   font-family: 'cera_proregular';
+  margin-bottom: 18px;
 }
 
 
@@ -253,9 +332,56 @@ line-height: 267%;
 }
 
 .product_card{
-  width: 258px;
+  max-width: 258px;
+  position: relative;
+  border-top: 2px solid transparent;
+  transition: 0.5s;
+  overflow: hidden;
+}
+
+.product_card:hover {
+  border-top-color: #46A358;
+}
+
+.product_card .card_discount{
+  position: absolute;
+  align-items: center;
+  width: 80px;
+  height: 29px;
+  top: 30px;
+  left: 0;
+  background-color: #46A358;
+  padding: 7px 8px;
+
+}
+
+.product_card .card_discount .discount{
+  font-family: 'cera_proregular';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: #fff;
+}
+
+.product_card ul{
+  list-style: none;
+  position: absolute;
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  bottom: -65px;
+  left: 0;
+  transition: 0.5s;
+}
+
+.product_card:hover ul{
+  bottom: 65px;
+}
+
+.product_card a:hover svg path{
+  fill: #46a358;
 }
 
 .product_card img{
@@ -275,12 +401,26 @@ line-height: 267%;
 }
 
 .product_card .price{
- font-family: 'cera_proregular';
  font-weight: 700;
  font-size: 18px;
  line-height: 89%;
  color: #46a358;
+}
 
+.product_card .fake_price{
+display: inline;
+text-decoration: line-through;
+text-decoration-thickness: 1px;
+padding: 0px 16px;
+font-weight: 400;
+font-size: 18px;
+line-height: 89%;
+color: #a5a5a5;
+}
+
+
+.pagination{
+  margin-top: 130px;
 }
 
 .Number_list {
@@ -288,12 +428,15 @@ line-height: 267%;
   justify-content: end;
   gap: 10px;
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 
 .numbers {
   text-decoration: none;
   font-family: 'cera_proregular';
   width: 35px;
+  height: 35px;
   font-weight: 300;
   font-size: 18px;
   line-height: 89%;
@@ -301,8 +444,9 @@ line-height: 267%;
   border: 1px solid #e5e5e5;
   border-radius: 4px;
   padding: 8px 12px;
-  display: inline-flex;
+  display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .numbers:hover {
