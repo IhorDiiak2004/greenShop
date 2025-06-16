@@ -529,8 +529,8 @@ margin-bottom: 25px;
 
 .promo_text .find_more_button{
   font-family: 'cera_proregular';
-  display: flex;
   align-items: center;
+  display: inline-flex;
   gap: 2px;
   padding: 11px 27px;
   background-color: #46A358;
