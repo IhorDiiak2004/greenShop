@@ -528,6 +528,8 @@ margin-bottom: 25px;
 }
 
 .promo_text .find_more_button{
+  font-family: 'cera_proregular';
+  display: flex;
   align-items: center;
   gap: 2px;
   padding: 11px 27px;
@@ -539,7 +541,6 @@ margin-bottom: 25px;
   color: #fff;
   text-decoration: none;
   border-radius: 6px;
-  font-family: 'cera_proregular';
 }
 
 .blog_header {
