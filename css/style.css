@@ -380,6 +380,17 @@ line-height: 267%;
   transition: 0.5s;
 }
 
+.product_card ul a{
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #fff;
+  width: 35px;
+  height: 35px;
+  padding: 8px 9px;
+}
+
 .product_card:hover ul{
   bottom: 65px;
 }
@@ -482,6 +493,10 @@ background-image: url("..images/Arrow - Right_hover 2.svg");
 
 /* Third section*/
 
+.plant_blog_section{
+  margin-bottom: 100px;
+}
+
 .blog_container{
   max-width: 1200px;
   margin: auto;
@@ -502,17 +517,22 @@ background-image: url("..images/Arrow - Right_hover 2.svg");
   width: 100%;
   max-width: 586px;
   height: 250px;
-  gap: 20px;
+  position: relative;
+  justify-content: flex-end;
 }
 
 .promo_card img {
   width: 100%;
   width: 287px;
   height: auto;
+  position: absolute;
+  left: 0;
+  top: -35px;
 }
 
 .promo_text{
   padding-top: 37px;
+  padding-right: 30px;
   text-align: right;
 }
 
@@ -632,9 +652,10 @@ font-weight: 500;
 font-size: 14px;
 line-height: 114%;
 color: #3d3d3d;
- display: flex;
- align-items: center;
- gap: 3px;
+display: flex;
+align-items: center;
+gap: 3px;
+padding-bottom: 13px;
 }
 
 .read_more:hover {
@@ -644,6 +665,202 @@ color: #3d3d3d;
 .read_more:hover svg path{
   fill:#46a358;
 }
+
+
+/*FOOTER*/
+
+.background{
+  max-width: 1200px;
+  margin: auto;
+  border-bottom: solid 1px rgba(70, 163, 88, 0.2);
+}
+
+.up_background{
+  padding: 24px 25px;
+  background: #fbfbfb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vertical_line{
+border: solid 1px rgba(70, 163, 88, 0.1);
+}
+
+.content_background img{
+  margin-bottom: 15px;
+}
+
+.text_background h4{
+font-family: 'cera_proregular';
+font-weight: 700;
+font-size: 17px;
+line-height: 94%;
+color: #3d3d3d;
+margin-bottom: 9px;
+}
+
+.text_background p{
+font-family: 'cera_proregular';
+font-weight: 400;
+font-size: 14px;
+line-height: 157%;
+color: #727272
+}
+
+.newsletter h4{
+font-family: 'cera_proregular';
+font-weight: 700;
+font-size: 18px;
+line-height: 89%;
+color: #3d3d3d;
+margin-bottom: 25px;
+}
+
+.newsletter form{
+  display: flex;
+  align-items: center;
+}
+
+.newsletter input{
+ box-sizing: border-box;
+ border-radius: 6px;
+ box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.06);
+ padding: 12px 11px;
+ width: 100%;
+}
+
+.newsletter_email {
+ font-family: 'cera_proregular';
+ font-weight: 400;
+ font-size: 14px;
+ line-height: 114%;
+ color: #acacac;
+}
+
+.newsletter button {
+  border-radius: 0 6px 6px 0;
+  background: #46a358;
+  cursor: pointer;
+  border: none;
+  text-align: center;
+}
+
+.newsletter .join{
+font-weight: 700;
+font-size: 18px;
+line-height: 89%;
+color: #fff;
+}
+
+.newsletter p{
+font-family: 'cera_proregular';
+font-weight: 400;
+font-size: 13px;
+line-height: 169%;
+color: #727272;
+}
+
+.footer-bottom {
+  background: linear-gradient(90deg, #edf6ef 0%, #52c368 100%);
+  padding: 25px;
+}
+
+.footer-info{
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.footer-contact{
+  display: flex;
+  gap: 10px;
+}
+
+.footer-contact p {
+font-family: 'cera_proregular';
+font-weight: 400;
+font-size: 14px;
+line-height: 157%;
+color: #3d3d3d;
+}
+
+.footer-links{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background: #fbfbfb;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  padding: 33px 25px;
+}
+
+.column ul {
+  list-style: none;
+}
+
+.column li {
+margin-bottom: 5px;
+font-weight: 400;
+font-size: 14px;
+line-height: 214%;
+color: #3d3d3d;
+font-family: 'cera_proregular';
+}
+
+.column h4{
+font-family: 'cera_proregular';
+font-weight: 700;
+font-size: 18px;
+line-height: 89%;
+color: #3d3d3d;
+margin-bottom: 8px;
+}
+
+.column .special_h4{
+  margin-bottom: 20px;
+}
+
+.social-icons{
+  display: flex;
+  gap: 5px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 33px;
+}
+
+.social-icon{
+  text-decoration: none;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(70, 163, 88, 0.2);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 12px;
+}
+
+.column .second_special{
+  margin-bottom: 13px;
+}
+
+.copyright{
+font-family: 'cera_proregular';
+font-weight: 400;
+font-size: 14px;
+line-height: 214%;
+color: #3d3d3d;
+margin-top: 6px;
+text-align: center;
+}
+
+
+
 
 
 
