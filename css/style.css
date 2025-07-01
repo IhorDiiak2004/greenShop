@@ -21,6 +21,42 @@
   box-sizing: border-box;
 }
 
+/* === PRELOADER === */
+.preloader {
+  position: fixed;
+  inset: 0;
+  background-color: white;
+  z-index: 101;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: hidePreloader 0.6s ease forwards;
+  animation-delay: 0.7s; 
+}
+
+@keyframes hidePreloader {
+  to {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+.loader {
+  width: 75px;
+  height: 75px;
+  border: 6px solid #46a358;
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
 .banner{
   margin-bottom: 46px;
 }
