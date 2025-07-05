@@ -560,8 +560,6 @@ background-image: url("..images/Arrow - Right_hover 2.svg");
 .blog_container{
   max-width: 1200px;
   margin: auto;
-  display: flex;
-  flex-direction: column;
 }
 
 .promo_cards {
@@ -572,7 +570,6 @@ background-image: url("..images/Arrow - Right_hover 2.svg");
 }
 
 .promo_card {
-  display: flex;
   background: #fbfbfb;
   width: 100%;
   max-width: 586px;
@@ -635,8 +632,16 @@ margin-bottom: 25px;
 }
 
 .blog_header {
-  text-align: center;
   margin-bottom: 35px;
+}
+
+.section_title{
+  text-align: center;
+}
+
+.section_description{
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .section_title {
@@ -664,8 +669,6 @@ margin-bottom: 25px;
 }
 
 .blog_card {
-  display: flex;
-  flex-direction: column;
   background: #fbfbfb;
 }
 
