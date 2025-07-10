@@ -57,9 +57,6 @@
 }
 
 
-.banner{
-  margin-bottom: 46px;
-}
 
 header{
   padding-top: 30px;
@@ -197,6 +194,10 @@ header nav ul li:hover::after{
 
 .login:hover{
   transform: scale(1.15);
+}
+
+.banner{
+  margin-bottom: 46px;
 }
 
 .banner .main_container{
@@ -775,7 +776,7 @@ padding-bottom: 13px;
 
 .content_background {
   padding: 24px 25px;
-  
+
 }
 
 .content_background img{
