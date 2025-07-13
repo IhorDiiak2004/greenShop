@@ -61,6 +61,7 @@
 header{
   padding-top: 30px;
   margin-bottom: 12px;
+
 }
 
 header img{
@@ -80,6 +81,7 @@ header img:hover{
 }
 
 .container_header .list{
+  flex-wrap: wrap;
   display: flex;
   gap: 50px;
   list-style: none;
@@ -186,6 +188,7 @@ header nav ul li:hover::after{
   color: #fff;
   text-decoration: none;
   padding: 8px 17px 7px; 
+  gap: 10px;
   border: none;
   font-family: 'cera_proregular';
   margin-bottom: 18px;

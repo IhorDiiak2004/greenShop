@@ -7,6 +7,15 @@
    .promo_card{
     margin-bottom: 45px;
    }
+
+   .product_grid{
+    display: block;
+    align-items: center;
+   }
+
+   .product_card{
+  width: 100%;
+}
 }
 
 @media screen and (max-width: 768px){
@@ -87,12 +96,22 @@
 @media screen and (max-width: 440px){
 
 
+.product_card{
+  width: 100%;
+}
+
+
   .container_header{
-    margin-left: 30px;
+    margin-left: 220px;
+    justify-content: center;
   }
 
+  .container_header .list{
+  align-items: center;
+}
+
   .banner{
-    margin-left: 30px;
+    margin-left: 220px;
   }
 
    header img{
@@ -101,19 +120,43 @@
 
   .banner .main_container{
     display: block;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content_page{
+    margin-left: 220px;
+  }
+
+  .plant_blog_section{
+    margin-left: 220px;
+  }
+
+  .background{
+    margin-left: 220px;
+  }
+
+  .copyright{
+    margin-left: 220px;
   }
 
   .blog_container.promo_cards{
     display: block;
    }
 
-   
-
-
 }
 
 @media screen and (max-width: 375px){
+  .container_header{
+    justify-content: center;
+  }
   
+.banner .main_container{
+    display: block;
+    justify-content: center;
+    margin-left: 77px;
+  }
+
 }
 
 @media screen and (max-width: 320px){
