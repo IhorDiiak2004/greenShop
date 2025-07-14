@@ -14,19 +14,23 @@
    }
 
    .product_card{
-  width: 100%;
-}
+   width: 100%;
+  }
 }
 
 @media screen and (max-width: 768px){
+
     .container_header {
     flex-direction: column;
     align-items: center;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
    .content_page .container_categories {
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 
   .left_side{
@@ -89,6 +93,7 @@
 
 .blog_cards{
   justify-content: center;
+  align-items: center;
 }
 
 }
